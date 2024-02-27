@@ -24,7 +24,12 @@ https://github.com/iamaziz/llm-voice-bot/assets/3298308/e444d4db-f8d9-4b7d-996d-
 
 Here are some examples:
 
+mistral
 ![image](https://github.com/iamaziz/llm-voice-bot/assets/3298308/4d0b97c9-e42e-4d83-9cd2-fee970cba86f)
+
+dolphin-mistral
+<img width="1204" alt="image" src="https://github.com/iamaziz/llm-voice-bot/assets/3298308/978c281d-143f-4b03-8ae2-2393a8229d44">
+
 
 llama2:13b
 <img width="1469" alt="image" src="https://github.com/iamaziz/llm-voice-bot/assets/3298308/ffdfeb91-89e8-4618-86da-ef8436da0868">
