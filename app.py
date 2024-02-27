@@ -26,10 +26,10 @@ def check_rtl(text):
 
 def print_chat_message(message):
     if message["role"] == "user":
-        with st.chat_message("user", avatar="👦"):
+        with st.chat_message("user", avatar="🎙️"):
             st.markdown(check_rtl(message['content']), unsafe_allow_html=True)
     else:
-        with st.chat_message("assistant", avatar="🤖"):
+        with st.chat_message("assistant", avatar="🦙"):
             st.markdown(check_rtl(message['content']), unsafe_allow_html=True)
 
 def main():
