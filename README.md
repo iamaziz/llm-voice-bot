@@ -2,7 +2,7 @@
 
 Speak to Ollama LLMs in any language.
 
-## Demo
+## Demo (📢 voice on)
 
 
 
