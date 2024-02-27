@@ -1,2 +1,4 @@
-# llm-voice-bot
-Speech to text with Ollama LLMs (Streamlit app) - support any language
+# 🎙️ Voice LLM Bot
+
+Speak to Ollama LLMs in any language.
+
