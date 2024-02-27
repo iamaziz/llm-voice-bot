@@ -4,11 +4,7 @@ Speak to Ollama LLMs in any language.
 
 ## Demo
 
-<video width="400" height="700" controls>
-  <source src="https://github.com/iamaziz/llm-voice-bot/blob/main/demo.mov" type="video/mov">
-</video>
 
 
-ohh
+https://github.com/iamaziz/llm-voice-bot/assets/3298308/e444d4db-f8d9-4b7d-996d-cb783d704c61
 
-![](demo.mov)
