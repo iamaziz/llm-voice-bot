@@ -4,7 +4,7 @@ from voice import record_voice
 
 st.set_page_config(page_title="🎙️ Voice Bot", layout="wide")
 st.title("🎙️ Speech Bot")
-st.sidebar.title("`In any language`")
+st.sidebar.title("`Speak with LLMs` \n`in any language`")
 
 
 def language_selector():
@@ -18,19 +18,20 @@ def llm_selector():
         return st.selectbox("LLM", ollama_models)
 
 
-def check_rtl(text):
-    if any("\u0600" <= c <= "\u06FF" for c in text):
-        return f"<p style='direction: rtl; text-align: right;'>{text}</p>"
-    return text
+def print_txt(text):
+    if any("\u0600" <= c <= "\u06FF" for c in text): # check if text contains Arabic characters
+        text = f"<p style='direction: rtl; text-align: right;'>{text}</p>"
+    st.markdown(text, unsafe_allow_html=True)
 
 
 def print_chat_message(message):
+    text = message["content"]
     if message["role"] == "user":
         with st.chat_message("user", avatar="🎙️"):
-            st.markdown(check_rtl(message['content']), unsafe_allow_html=True)
+            print_txt(text)
     else:
         with st.chat_message("assistant", avatar="🦙"):
-            st.markdown(check_rtl(message['content']), unsafe_allow_html=True)
+            print_txt(text)
 
 def main():
     
